@@ -20,8 +20,9 @@
 /* doctor portrait: relocated into the media, centered at the BOTTOM, smaller */
 .emx-ms-portrait {
   position: absolute; z-index: 50;
-  left: 50%; bottom: -110px; transform: translateX(-50%);
-  width: 160px; line-height: 0;
+  left: -80px; bottom: -165px;       /* bottom-left, sticking out below-left */
+  width: 150px; line-height: 0;
+  padding-bottom: 10px;              /* large screens only (reset on mobile below) */
 }
 .emx-ms-portrait img {
   display: block; width: 100%; height: auto;
@@ -29,7 +30,7 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, .28);
 }
 @media (max-width: 768px) {
-  .emx-ms-portrait { width: 120px; bottom: -80px; }
+  .emx-ms-portrait { width: 90px; left: -22px; bottom: -96px; padding-bottom: 0; }
 }
 
 /* fixed arrow toggle — same icon always, clear & styled, vertically centered */
